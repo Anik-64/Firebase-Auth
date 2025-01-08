@@ -1,0 +1,40 @@
+{
+  "name": "firebase-auth",
+  "version": "1.0.0",
+  "description": "Implement Firebase Authentication ",
+  "keywords": [
+    "Firebase",
+    "Auth",
+    "Nodejs"
+  ],
+  "homepage": "https://github.com/Anik-64/Firebase-Auth#readme",
+  "bugs": {
+    "url": "https://github.com/Anik-64/Firebase-Auth/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anik-64/Firebase-Auth.git"
+  },
+  "license": "ISC",
+  "author": "Anik Majumder",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "firebase-admin": "^13.0.2",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "xss": "^1.0.15"
+  }
+}
