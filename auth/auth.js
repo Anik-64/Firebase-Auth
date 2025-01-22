@@ -2,7 +2,7 @@ const express = require('express');
 const { commonMiddlewares, createRateLimiter } = require('../middleware/commonMiddleware');
 const { body, validationResult } = require('express-validator');
 // const bcrypt = require('bcrypt');
-const admin = require('../config/config');
+const { admin, db } = require('../config/config');
 
 const authRouter = express.Router();
 
@@ -12,8 +12,6 @@ commonMiddlewares(authRouter);
 // Rate Limiting
 const authRouterLimiter = createRateLimiter();
 authRouter.use(authRouterLimiter);
-
-const db = admin.firestore();
 
 // Auth
 authRouter.post('/',
